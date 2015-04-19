@@ -1,0 +1,42 @@
+%header.menu.js_menu
+	.container
+		= link_to "", "/", class: "logo"
+		
+		.menu__hamburger.icon-menu
+			%span Menu
+		.menu__close.icon-close
+
+		.menu__users
+			%ul
+				%li= link_to "Account aanmaken", "#"
+				%li= link_to "Inloggen", "#"
+			      
+			.menu__language-switch.js_toggle
+				%ul
+					%li.js_toggle__select.current
+						%span Nederlands
+					%li= link_to "Nederlands", "#"
+					%li= link_to "English", "#"
+
+		/ .menu__search
+		/ 	%a.icon-search
+		/ 	.menu__close.icon-close
+		/ 	%form.menu__input
+		/ 		%a.icon-search
+		/ 		%input{:type => "search", :placeholder => "Zoeken"}
+
+	%nav.menu__nav
+		.container
+			%ul.menu__main
+				%li.has-sub
+					= link_to "Woningaanbod", "#"
+					%ul.menu__sub
+						%li= link_to "Koopwoningen", "#"
+						%li= link_to "Huurwoningen", "#"
+						%li= link_to "Nieuwbouw", "#"
+						%li= link_to "Recreatie", "#"
+						%li= link_to "Europees aanbod", "#"
+				%li= link_to "Huis plaatsen", "#"
+				%li= link_to "NVM makelaars", "#"
+				%li= link_to "Mijn funda", "#"
+                       
